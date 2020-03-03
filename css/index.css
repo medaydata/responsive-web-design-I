@@ -1,3 +1,408 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+/***header style**/
+
+
+header{
+	display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+header nav{
+    height: 0px;
+    
+}
+
+header nav a{
+	color: gray;
+	font-size: 17px;
+    text-align: left;
+    font-style: normal;
+    padding: 30px;
+    text-decoration: none;
+    line-height: 60px;
+}
+
+
+
+
+
+
+.intro{
+	display:flex;
+    justify-content: space-evenly;
+    
+
+}
+.intro .Intro-a {
+       
+        text-align: center;
+        padding-top: 120px;
+        font-size: 400%;
+}
+
+.intro .intro-a h2,botton{
+    font-size:200px;
+    
+	 text-align: center; 
+}
+.intro {
+	text-align: center;
+    margin-left:0%;
+    width:100% ;
+    
+    
+  }
+  .intro div{
+  
+	width:30%;
+	height:400px;
+  } 
+
+
+
+
+.info1{
+	display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+   
+    
+}
+
+.info1 {
+	text-align:center;
+    width: 70%;
+    padding:2%;
+    margin-left: 17%;
+    border-top: 2px solid black;
+	}
+	
+	.info1 section{
+		text-align: left;
+        width: 80%;
+        padding: 5PX;;
+	}
+.Img-info{
+margin-left: 19%;
+width: 100%;
+
+display:flex;
+}
+.Img-info img{
+    max-width:100%;
+    justify-content: center;
+}
+
+
+
+.info2{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+   
+    width:62.50%;
+    
+	margin-left: 20%;
+    margin-top: 20px;
+    
+    
+    border-bottom: 2px solid black;
+}
+.info2 section{
+	
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+  footer{
+
+	text-align: left;
+	width:100%;
+    margin-left: 1600px;
+    padding-left: 0px;
+    padding-top: 20px;
+}
+.copyright{
+    align-items: center;
+    text-align: center;
+}
+
+ 
+@media (max-width: 800px){
+    header {
+        flex-direction: column-reverse;
+        
+        align-items: center;
+        
+    }
+    header nav{
+        display:flex;
+        justify-content: space-evenly;
+        width: 30%;
+        
+    }
+    header nav a{
+        align-items: center;
+        font-size: 1em;
+        
+
+    }
+
+
+   /** header nav {
+        display: flex;
+        margin-left: 10%;
+    }
+    **/
+    header img{
+        width: 150px;
+        padding: 20px;
+        margin: 20px;
+    }
+    .intro img{
+        display:none;
+    }
+
+    .intro {
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+            width:100%;
+            
+    }
+    .intro .Intro-a{
+        width: 80%;
+        text-align: center;
+        padding-top: 120px;
+        font-size: 200%;
+    }
+.intro .img-a-h{
+    display: none;
+}
+
+
+
+
+
+
+.info1{
+width:90%;
+font-size: 90%;
+margin-left: 60px;
+}
+.Img-info {
+ width:83%;
+ margin-left:70px;
+}
+
+
+
+.info2{
+    width:80%;
+    font-size: 100%;
+    margin-left:70px;
+    border-bottom: 2px solid black;
+    }
+    .info2 section{
+        width:120%;
+    }
+}
+
+footer{
+    width:80%;
+    font-size: 100%;
+    margin-left:0px;
+    padding-left: 70px;
+}
+
+@media (max-width: 480px){
+    header {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    header nav a{
+        align-items: center;
+        font-size: 1em;
+        
+
+    }
+    header nav{
+        display:flex;
+        flex-direction: column;
+        
+        justify-content: center;
+        padding-top: 20px;
+       box-sizing: 10px;
+        margin: 0px;
+        margin-top: 150px;
+        margin-bottom: 80px;
+        align-items: center;
+        width: 100%;
+        
+    }
+    header nav a{
+        text-align: center;
+        font-size: 1rem;
+        
+        padding: 0px;
+        width: 100%;
+        border-bottom: 2px solid gray;
+        border-bottom: 2px solid gray;
+        width: 80%;
+    }
+
+    
+
+    .intro {
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+            width:100%;
+            
+    }
+    .intro .Intro-a{
+        width: 80%;
+        text-align: center;
+        padding-top: 120px;
+        font-size: 200%;
+    }
+.intro .img-a-h{
+    display: none;
+}
+
+
+
+
+
+
+.info1{
+display: flex;
+justify-content: center;
+flex-direction: column;
+width:100%;
+font-size: 80%;
+margin-left: 10px;
+}
+
+
+
+.info1 section{  
+    width:90%;
+
+}
+.Img-info {
+ width:86%;
+ margin-left:35px;
+}
+
+
+
+.info2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width:80%;
+    font-size: 80%;
+    margin-left: 40px;
+    }
+    
+    
+    
+    .info2 section{  
+        width:100%;
+    
+    }
+
+
+footer{
+    width:100%;
+    font-size: 80%;
+    margin-left:35px;
+    padding-left:0px;
+    
+}
+footer adress{
+    font-size: 80%;
+    align-items: left;
+    
+}
+footer .copyright{
+    align-items: center;
+    padding: 10px;
+    font-size: 80%;
+    margin-left: 15px;
+}
+}
